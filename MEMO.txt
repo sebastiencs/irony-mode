@@ -3,3 +3,11 @@ add '-Xlinker -rpath -Xlinker /opt/llvm-git/lib' to  'build/src/CMakeFiles/irony
 in 'build/src/CMakeFiles/irony-server.dir/flags.make':
 CXX_DEFINES = -DCLANG_BUILTIN_HEADERS_DIR=\"/opt/llvm-git/lib/clang/4.0.0/include\"
 CXX_INCLUDES = -I~/github/my-irony-mode/server/src -I/opt/llvm-git/include
+
+test irony-server:
+https://gist.github.com/sebastiencs/b131b59db3304c04dfbe579a50aa0cd8
+echo '-x c++ -std=c++1z -I/opt/Qt-5.7/include' | ~/github/my-irony-mode/server/build/bin/irony-server   complete main.cpp  13 3
+
+test complete:
+https://gist.github.com/sebastiencs/6b284601ce1128a00d2febaac449401b
+https://gist.github.com/Rip-Rip/758615
