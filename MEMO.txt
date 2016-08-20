@@ -1,0 +1,5 @@
+add '-Xlinker -rpath -Xlinker /opt/llvm-git/lib' to  'build/src/CMakeFiles/irony-server.dir/link.txt'
+
+in 'build/src/CMakeFiles/irony-server.dir/flags.make':
+CXX_DEFINES = -DCLANG_BUILTIN_HEADERS_DIR=\"/opt/llvm-git/lib/clang/4.0.0/include\"
+CXX_INCLUDES = -I~/github/my-irony-mode/server/src -I/opt/llvm-git/include
