@@ -1,5 +1,8 @@
 add '-Xlinker -rpath -Xlinker /opt/llvm-git/lib' to  'build/src/CMakeFiles/irony-server.dir/link.txt'
 
+/opt/llvm-git/bin/clang++  -fno-exceptions -O2 -DNDEBUG   CMakeFiles/irony-server.dir/support/CommandLineParser.cpp.o CMakeFiles/irony-server.dir/support/TemporaryFile.cpp.o CMakeFiles/irony-server.dir/Command.cpp.o CMakeFiles/irony-server.dir/Irony.cpp.o CMakeFiles/irony-server.dir/TUManager.cpp.o CMakeFiles/irony-server.dir/main.cpp.o -o ../bin/irony-server -rdynamic
+-L/opt/llvm-git/lib -lclang -Wl,-rpath=/opt/llvm-git/lib
+
 in 'build/src/CMakeFiles/irony-server.dir/flags.make':
 CXX_DEFINES = -DCLANG_BUILTIN_HEADERS_DIR=\"/opt/llvm-git/lib/clang/4.0.0/include\"
 CXX_INCLUDES = -I~/github/my-irony-mode/server/src -I/opt/llvm-git/include
